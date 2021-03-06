@@ -26,10 +26,10 @@
         app:mt_speechMode="true"
         app:theme="@style/AppTheme.PopupOverlay">
 
-        <ListView
+        <ListFragment
             android:id="@+id/mListView"
             android:layout_width="380dp"
-            android:layout_height="119dp"></ListView>
+            android:layout_height="119dp"></ListFragment>
     </com.mancj.materialsearchbar.MaterialSearchBar>
 
 
