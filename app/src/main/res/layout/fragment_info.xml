@@ -9,8 +9,8 @@
 
 
     <TextView
-        android:layout_width="412dp"
-        android:layout_height="736dp"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
         android:background="#65FCF876"
         android:padding="16dp"
         android:text="@string/hello_blank_fragment"
@@ -19,19 +19,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.mancj.materialsearchbar.MaterialSearchBar
-        app:mt_speechMode="true"
-        app:mt_hint="Custom hint"
-        app:theme="@style/AppTheme.PopupOverlay"
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/searchBar"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="157dp"
+
+        app:mt_hint="Custom hint"
+        app:mt_speechMode="true"
+        app:theme="@style/AppTheme.PopupOverlay" />
+
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mListView">
-    </ListView>
+        android:id="@+id/mListView"
+        android:layout_width="wrap_content"
+        android:layout_height="189dp"></ListView>
 
 
 </LinearLayout>
