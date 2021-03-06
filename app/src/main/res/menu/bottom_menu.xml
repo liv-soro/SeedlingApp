@@ -3,14 +3,18 @@
 
     <item
         android:id="@+id/homeFragment"
-        android:title="Home"
+        android:title="@string/home"
         android:icon="@drawable/my_home" />
     <item
         android:id="@+id/accountFragment"
-        android:title="My Account"
+        android:title="@string/my_account"
         android:icon="@drawable/account"/>
     <item
         android:id="@+id/infoFragment"
-        android:title="Info"
+        android:title="@string/info"
         android:icon="@drawable/info"/>
+    <item
+        android:id="@+id/scanFragment"
+        android:title="@string/scan"
+        android:icon="@drawable/barcode"/>
 </menu>

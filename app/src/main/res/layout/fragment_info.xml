@@ -4,18 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoFragment">
+    tools:context=".InfoFragment"
+    android:orientation="vertical"
+    android:background="#65FCF876">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Info Fragment"
-        android:textSize="25sp"
+
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:mt_hint="Custom hint"
+        app:mt_speechMode="true"
+        app:theme="@style/AppTheme.PopupOverlay">
+
+        <ListView
+            android:id="@+id/mListView"
+            android:layout_width="380dp"
+            android:layout_height="119dp"></ListView>
+    </com.mancj.materialsearchbar.MaterialSearchBar>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

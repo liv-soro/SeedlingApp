@@ -5,4 +5,12 @@
     <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scan_fragment">Scan Fragment</string>
+    <string name="home">Home</string>
+    <string name="my_account">My Account</string>
+    <string name="info">Info</string>
+    <string name="scan">Scan</string>
+    <string name="welcome_cutiepie">WELCOME CUTIEPIE !</string>
+    <string name="recycle_some_more_and_see_your_tree_grow">Recycle some more and see your tree grow</string>
+    <string name="keep_growing">Keep Growing!</string>
 </resources>
