@@ -1,6 +1,10 @@
 package com.example.seedlingapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -14,13 +18,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)//
+        val tvEmail : TextView = findViewById(R.id.tvEmail)
+        val tvPassword : TextView = findViewById(R.id.tvPassword)
+        val btnLogin : Button = findViewById(R.id.btnLogin)
+        btnLogin.setOnClickListener{
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent);
+        }
+
+
+
+/*        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)//
         val navController = findNavController(R.id.fragment)
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.infoFragment, R.id.accountFragment, R.id.homeFragment, R.id.scanFragment))
         setupActionBarWithNavController(navController)
 
-        bottomNavigationView.setupWithNavController(navController)
-
+        bottomNavigationView.setupWithNavController(navController)*/
 
 
 

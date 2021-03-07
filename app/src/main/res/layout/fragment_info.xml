@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoFragment"
-    android:orientation="vertical"
-    android:background="#65FCF876">
+    android:background="#fff"
+    tools:context =".InfoFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -22,15 +21,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:mt_hint="Custom hint"
+        app:mt_hint="Search"
         app:mt_speechMode="true"
         app:theme="@style/AppTheme.PopupOverlay">
 
-        <ListFragment
-            android:id="@+id/mListView"
-            android:layout_width="380dp"
-            android:layout_height="119dp"></ListFragment>
     </com.mancj.materialsearchbar.MaterialSearchBar>
 
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="380dp"
+        android:layout_height="119dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"></ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
