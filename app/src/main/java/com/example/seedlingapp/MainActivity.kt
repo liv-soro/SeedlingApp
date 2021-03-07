@@ -18,12 +18,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val tvEmail : TextView = findViewById(R.id.tvEmail)
-        val tvPassword : TextView = findViewById(R.id.tvPassword)
+/*        val tvEmail : TextView = findViewById(R.id.tvEmail)
+        val tvPassword : TextView = findViewById(R.id.tvPassword)*/
         val btnLogin : Button = findViewById(R.id.btnLogin)
         btnLogin.setOnClickListener{
             val intent = Intent(this, MainActivity2::class.java)
-            startActivity(intent);
+            startActivity(intent)
         }
 
 
