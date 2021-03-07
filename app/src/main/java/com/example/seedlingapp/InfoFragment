@@ -40,10 +40,10 @@ class InfoFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_info, container, false)
+        val v : View = inflater.inflate(R.layout.fragment_info, container, false)
         
-        val lv = findViewById(R.id.mListView) as ListView
-        val searchBar = findViewById(R.id.searchBar) as MaterialSearchBar
+        val lv = v.findViewById(R.id.mListView) as ListView
+        val searchBar = v.findViewById(R.id.searchBar) as MaterialSearchBar
         searchBar.setHint("Search...")
         searchBar.setSpeechMode(true)
 
@@ -75,7 +75,7 @@ class InfoFragment : Fragment() {
 
         })
         
-        return view
+        return v
     }
 
     companion object {
