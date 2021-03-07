@@ -48,7 +48,7 @@ class InfoFragment : Fragment() {
         searchBar.setSpeechMode(true)
 
         var borough = arrayOf("Camden","Kensington and Chelsea","Hammersmith and Fulham")
-        val adapter = ArrayAdapter<String> (this,android.R.layout.simple_list_item_1, borough)
+        val adapter = ArrayAdapter<String> (getActivity(),android.R.layout.simple_list_item_1, borough)
         lv.setAdapter(adapter)
 
         searchBar.addTextChangeListener(object: TextWatcher {
